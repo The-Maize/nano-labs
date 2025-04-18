@@ -2,9 +2,8 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
-  name: stakater
+  name: itzg
   namespace: flux-system
 spec:
-  type: oci
-  interval: 5m
-  url: oci://ghcr.io/stakater/charts
+  interval: 2h
+  url: https://itzg.github.io/minecraft-server-charts/
