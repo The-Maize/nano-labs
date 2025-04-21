@@ -69,6 +69,7 @@ spec:
               GITEA__SERVER__ROOT_URL: "https://git.${SECRET_DOMAIN}"
               GITEA__SERVER__SSH_DOMAIN: "ssh.git.${SECRET_DOMAIN}"
               GITEA__SERVER__SSH_PORT: 22
+              GITEA__SERVER__LFS_START_SERVER: "True"
             envFrom: *envFrom
             securityContext:
               allowPrivilegeEscalation: false
