@@ -70,7 +70,6 @@ spec:
               GITEA__SERVER__SSH_DOMAIN: "ssh.git.${SECRET_DOMAIN}"
               GITEA__SERVER__SSH_PORT: 22
               GITEA__SERVER__LFS_START_SERVER: "True"
-              GITEA__mailer__ENABLED: "True"
               # Privacy Settings
               GITEA__service__DISABLE_REGISTRATION: "True"
               GITEA__service__REQUIRE_SIGNIN_VIEW: "True"
