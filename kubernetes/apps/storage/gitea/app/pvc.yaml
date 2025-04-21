@@ -5,9 +5,9 @@ metadata:
   name: gitea
   namespace: gitea
 spec:
-  storageClassName: "${STORAGE_READWRITEONCE}"
+  storageClassName: ${DEFAULT_STORAGE}
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
+      storage: 500Gi
