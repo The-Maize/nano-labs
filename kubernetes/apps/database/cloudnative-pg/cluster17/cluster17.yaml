@@ -5,7 +5,7 @@ kind: Cluster
 metadata:
   name: postgres17
 spec:
-  instances: 3
+  instances: 1 # Running on a single node
   # CNPG Offical Image
   imageName: ghcr.io/cloudnative-pg/postgresql:17.2@sha256:b17d21f8ec36add9b3c0ea3fb354d05f62a8fddf8ba65ae94e63ba77bc42202e
   primaryUpdateStrategy: unsupervised
@@ -42,7 +42,7 @@ spec:
       wal:
         compression: bzip2
         maxParallel: 8
-      destinationPath: s3://kube-S3-cloudnativepg
+      destinationPath: s3://nanolabs-cloudnative-pg
       endpointURL: https://s3.us-west-004.backblazeb2.com
       serverName: &currentCluster postgres17-v1
       s3Credentials:
