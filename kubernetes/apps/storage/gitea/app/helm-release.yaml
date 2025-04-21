@@ -71,8 +71,8 @@ spec:
               GITEA__SERVER__SSH_PORT: 22
               GITEA__SERVER__LFS_START_SERVER: "True"
               GITEA__service__DISABLE_REGISTRATION: "True"
-              GITEA__log__MODE: "console"
-              GITEA__log__LEVEL: "debug"
+              # GITEA__log__MODE: "console"
+              # GITEA__log__LEVEL: "debug"
             envFrom: *envFrom
             securityContext:
               allowPrivilegeEscalation: false
