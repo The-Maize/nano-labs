@@ -5,7 +5,7 @@ metadata:
   name: gitea
   namespace: gitea
 spec:
-  storageClassName: ${DEFAULT_STORAGE}
+  storageClassName: openebs-hostpath
   accessModes:
     - ReadWriteOnce
   resources:
