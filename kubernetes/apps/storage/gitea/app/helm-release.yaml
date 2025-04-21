@@ -29,7 +29,7 @@ spec:
   #     name: gitea-config
   #     valuesKey: POSTGRESQL_PASSWORD
   values:
-    fullnameOverride: *name
+    fullnameOverride: *app
     defaultPodOptions:
       automountServiceAccountToken: false
       enableServiceLinks: false
