@@ -70,6 +70,7 @@ spec:
               GITEA__SERVER__SSH_DOMAIN: "ssh.git.${SECRET_DOMAIN}"
               GITEA__SERVER__SSH_PORT: 22
               GITEA__SERVER__LFS_START_SERVER: "True"
+              GITEA__log__LEVEL: "debug"
             envFrom: *envFrom
             securityContext:
               allowPrivilegeEscalation: false
